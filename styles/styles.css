@@ -251,4 +251,31 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  text-align: left;
+}
+
+button {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 15px 45px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #464646;
+}
+
+header a {
+  font-size: 25px;
 }

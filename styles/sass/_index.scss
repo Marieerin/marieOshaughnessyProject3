@@ -1,0 +1,36 @@
+.question, 
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+fieldset {
+    border: none;
+    text-align: left;
+}
+button {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 7px;
+
+    padding: 15px 45px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+button:hover {
+    background-color: rgb(70, 70, 70);
+}
+header{
+    a {
+        font-size: 25px;
+    }
+    
+}
