@@ -1,14 +1,4 @@
-.question, 
-header {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    
-    
-}
+/* global styles */
 fieldset {
     border: none;
     text-align: left;
@@ -28,9 +18,30 @@ a {
 button:hover {
     background-color: rgb(70, 70, 70);
 }
+/* header styles */
 header{
     a {
         font-size: 25px;
     }
     
+}
+
+/* question  styles */
+.question, 
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+/* global styles */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
