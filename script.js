@@ -37,6 +37,11 @@ $(function() {
         e.preventDefault();
         formSubmitted();
     });
+    $('.questionButton').on('click', function(e){
+        e.preventDefault();
+    })
+
+    
     // button resets quiz 
     // $('#resetResults').click(function(){ 
 

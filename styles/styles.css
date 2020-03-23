@@ -238,7 +238,6 @@ html {
 /* global styles */
 fieldset {
   border: none;
-  text-align: left;
 }
 
 button {
@@ -287,8 +286,13 @@ header {
   text-align: center;
 }
 
-/* global styles */
-footer {
+.innerFieldset {
+  text-align: left;
+  width: 35vw;
+}
+
+/* result  styles */
+.result {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

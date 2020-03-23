@@ -18,73 +18,76 @@
         <button><a href="#question1">Start Quiz!</a></button>
     </header>
     <main>
-        <section class="question question1" id="question1">
-            <h2>Do you turn everything into a song?</h2>
-            <form action="">
-                <fieldset>
+        <form action="">
+
+            <!-- first question -->
+            <fieldset class="question question1" id="question1">
+                <h2>Do you turn everything into a song?</h2>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question1Answer1" value="1" name="question1">
                     <label for="question1Answer1">I'm not very musical.</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question1Answer2" value="2" name="question1">
                     <label for="question1Answer2" >answer 2</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question1Answer3" value="3" name="question1">
                     <label for="question1Answer3">answer 3</label>
                 </fieldset>
-            </form>
-            <button><a href="#question2">Next Question</a></button>
-            
-        </section>
-        <section class="question question2" id="question2">
-            <h2>You sit down on a crowded bus. There is a woman sitting next to you. What do you do?</h2>
-            <form action="">
-                <fieldset>
+                <button class=".questionButton"><a href="#question2">Next Question</a></button>
+            </fieldset>
+
+            <!-- second question -->
+            <fieldset class="question question2" id="question2">
+                <h2>You sit down on a crowded bus. There is a woman sitting next to you. What do you do?</h2>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question2Answer1" value="3" name="question2">
                     <label for="question2Answer1">Strike up a conversation and find out their life story.</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question2Answer2" value="1" name="question2">
                     <label for="question2Answer2">Let her sit in peace... she wouldn't want to talk to me anyways.</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question2Answer3" value="2" name="question2">
                     <label for="question2Answer3">Why would I do anything???</label>
                 </fieldset>
-            </form>
-            <button><a href="#question3">Next Question</a></button>
-            
-        </section>
-        <section class="question question3" id="question3">
-            <h2>You get to the checkout lane of a grocery store and there is a very long line up. What is your reaction?</h2>
-            <form action="">
-                <fieldset>
+                <button class=".questionButton"><a href="#question3">Next Question</a></button>
+                
+            </fieldset>
+
+            <!-- third question -->
+            <fieldset class="question question3" id="question3">
+                <h2>You get to the checkout lane of a grocery store and there is a very long line up. What is your reaction?</h2>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question3Answer1" value="1" name="question3">
                     <label for="question3Answer1">"Ughh! I hate lines!!"</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question3Answer2" value="3" name="question3">
                     <label for="question3Answer2">"OOOoh they must have heard I was going to be here! I'm so popular!"</label>
                 </fieldset>
-                <fieldset>
+                <fieldset class="innerFieldset">
                     <input type="radio" id="question3Answer3" value="2" name="question3">
                     <label for="question3Answer3">"Oh well.... good thing I have a book with me!"</label>
                 </fieldset>        
-            </form>
-            <button><a href="#answer" type="submit">Would my mom like you?</a></button>
-        </section>
-        <section class="answer" id="answer">
-            <div id="percentageAnswer">
+                <button class=".questionButton"><a href="#answer" type="submit">Would my mom like you?</a></button>
+            </fieldset>
 
-            </div>
-            <div id="textAnswer">
-
-            </div>
-        </section>
-        <footer>
-            <button type="reset" id="resetResults" value="reset"><a href="#topOfPage">Try Again!</a></button>
-        </footer>
+            <!-- quiz result -->
+            <fieldset class="result">
+                <fieldset class="answer" id="answer">
+                    <div id="percentageAnswer">
+        
+                    </div>
+                    <div id="textAnswer">
+        
+                    </div>
+                </fieldset>
+                <button type="reset" id="resetResults" value="reset"><a href="#topOfPage">Try Again!</a></button>
+            </fieldset>
+        </form>
 
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>

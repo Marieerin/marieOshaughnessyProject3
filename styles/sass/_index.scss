@@ -1,14 +1,12 @@
 /* global styles */
 fieldset {
     border: none;
-    text-align: left;
 }
 button {
     background: black;
     color: white;
     border: none;
     border-radius: 7px;
-
     padding: 15px 45px;
 }
 a {
@@ -39,11 +37,16 @@ header {
     flex-direction: column;
     text-align: center;
 }
+.innerFieldset {
+    text-align: left;
+    width: 35vw;
+}
 
 
 
-/* global styles */
-footer {
+
+/* result  styles */
+.result {
     display: flex;
     align-items: center;
     justify-content: center;
