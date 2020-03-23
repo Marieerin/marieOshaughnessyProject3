@@ -259,8 +259,12 @@ button:hover {
 }
 
 /* header styles */
+header h1 {
+  font-size: 4.5em;
+}
+
 header a {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 
 /* question  styles */
@@ -294,4 +298,5 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
 }
