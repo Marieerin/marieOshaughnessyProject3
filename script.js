@@ -1,21 +1,9 @@
-const momQuiz = {
-    question1: 
-    {
-        answer1: 1,
-        answer2: 2,
-        answer3: 3,
-    },
-    question2: {
-        answer1: 3,
-        answer2: 1,
-        answer3: 2,
-    },
-    question3: {
-        answer1: 1,
-        answer2: 3,
-        answer3: 2,
-    },
-}
+const momQuiz = [
+    [1,2,3,],
+    [3, 1, 2,],
+    [1, 3, 2],
+]
+
 
 $(function() {
     function formSubmitted() {
@@ -37,13 +25,9 @@ $(function() {
         e.preventDefault();
         formSubmitted();
     });
-    $('.questionButton').on('click', function(e){
+
+
+    $('button.questionButton').on('click', function(e){
         e.preventDefault();
-    })
-
-    
-    // button resets quiz 
-    // $('#resetResults').click(function(){ 
-
-    // })
+    });
 });

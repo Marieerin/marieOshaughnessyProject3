@@ -2,17 +2,17 @@
 fieldset {
     border: none;
 }
+a,
 button {
     background: black;
     color: white;
     border: none;
     border-radius: 7px;
     padding: 15px 45px;
-}
-a {
     text-decoration: none;
     color: white;
 }
+a:hover,
 button:hover {
     background-color: rgb(70, 70, 70);
 }
