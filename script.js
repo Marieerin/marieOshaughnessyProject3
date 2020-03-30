@@ -11,19 +11,20 @@ $(function() {
         //evaluation section
         // my mom doesnt really like anyone less than 44%
         const x =  Math.floor(question1 + question2 + question3);
-        const finalAnswer =  Math.round(x / 9 * 100);
+        finalAnswer =  Math.round(x / 9 * 100);
         console.log(finalAnswer)
         
         // display the percentage that my mom would like you
         function displayFinalAnswer() {
-            $('.percentageAnswer').html(`<p>% ${finalAnswer}</p>`)
+            $('.percentageAnswer').html(`<p>${finalAnswer} %</p>`)
+            $('.textAnswer').html('<p> Chance my mom would like you!</p>')
         }
         displayFinalAnswer();
     }
 
     // Next button scrolls to the next question
     $('a').on('click', function (e) {
-        // e.preventDefault();
+        e.preventDefault();
         $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
     });
 

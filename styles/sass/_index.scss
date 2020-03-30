@@ -1,25 +1,55 @@
+
 /* global styles */
+body{
+    background-color: $lighterPrimaryColor;
+    color: $darkPrimaryColor;
+}
 fieldset {
     border: none;
 }
-a,
-button {
-    background: black;
-    color: white;
-    border: none;
-    border-radius: 7px;
-    padding: 15px 45px;
-    text-decoration: none;
-    color: white;
-}
-a:hover,
-button:hover {
-    background-color: rgb(70, 70, 70);
-}
+    //button styles
+    a,
+    button {
+        background: $darkPrimaryColor;
+        color: $white;
+        border: none;
+        border-radius: 7px;
+        padding: 15px 45px;
+        text-decoration: none;
+        color: $white;
+    }
+    a:hover,
+    button:hover,
+    a:focus,
+    button:focus {
+        background-color: $lightPrimaryColor;
+    }
+
+    // fonts
+    h1,
+    h2 {
+        font-family: $primaryFont;
+    }
+    p,
+    a,
+    label {
+        font-family: $secondaryFont;
+    }
 /* header styles */
 header{
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     h1 {
         font-size: 4.5em;
+        margin-bottom: 0;
+    }
+    p {
+        margin: 10px 0 30px 0;
+        width: 50vw;
     }
     a {
         font-size: 1.5em;
@@ -48,7 +78,20 @@ header {
 /* result  styles */
 .result {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     padding: 20px;
+    height: 100vh;
+}
+.answer{
+    display: flex;
+    align-items: center;
+    .percentageAnswer {
+        font-size: 90px;
+    }
+    .textAnswer {
+        font-size: 50px;
+        margin-left: 15px;
+    }
 }
