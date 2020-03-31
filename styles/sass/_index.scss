@@ -35,8 +35,19 @@ fieldset {
     label {
         font-family: $secondaryFont;
     }
+    img{
+        width: 200px;
+        border-radius: 50%;
+        border: 5px solid $lightPrimaryColor;
+    }
 /* header styles */
 header{
+      background-image: radial-gradient($lighterPrimaryColor, $lightPrimaryColor);
+
+    text-align: right;
+    section {
+        display: flex;
+    }
     div{
         display: flex;
         flex-direction: column;
@@ -44,7 +55,7 @@ header{
         align-items: center;
     }
     h1 {
-        font-size: 4.5em;
+        font-size: 3.5em;
         margin-bottom: 0;
     }
     p {
@@ -54,7 +65,19 @@ header{
     a {
         font-size: 1.5em;
     }
-    
+    .mom {
+        margin-left: 20px;
+    }
+    #mom2{
+        z-index: 10;
+        position: absolute;
+        opacity: 0;
+        
+    }
+    #mom2:hover,
+    #mom2:focus {
+        opacity: 1;
+    }
 }
 
 /* question  styles */

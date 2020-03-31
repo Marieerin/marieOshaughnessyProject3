@@ -276,7 +276,24 @@ label {
   font-family: "Rokkitt", serif;
 }
 
+img {
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #69936f;
+}
+
 /* header styles */
+header {
+  background-image: radial-gradient(#eef9ed, #69936f);
+  text-align: right;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 header div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -294,7 +311,7 @@ header div {
 }
 
 header h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   margin-bottom: 0;
 }
 
@@ -305,6 +322,21 @@ header p {
 
 header a {
   font-size: 1.5em;
+}
+
+header .mom {
+  margin-left: 20px;
+}
+
+header #mom2 {
+  z-index: 10;
+  position: absolute;
+  opacity: 0;
+}
+
+header #mom2:hover,
+header #mom2:focus {
+  opacity: 1;
 }
 
 /* question  styles */
