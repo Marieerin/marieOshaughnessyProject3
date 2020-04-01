@@ -422,8 +422,8 @@ header {
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(360deg) translateY(-100px) scale(3);
-            transform: rotate(360deg) translateY(-100px) scale(3);
+    -webkit-transform: translateY(100px) rotateZ(20000deg) scale(3);
+            transform: translateY(100px) rotateZ(20000deg) scale(3);
     opacity: 0;
   }
 }
@@ -434,8 +434,8 @@ header {
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(360deg) translateY(-100px) scale(3);
-            transform: rotate(360deg) translateY(-100px) scale(3);
+    -webkit-transform: translateY(100px) rotateZ(20000deg) scale(3);
+            transform: translateY(100px) rotateZ(20000deg) scale(3);
     opacity: 0;
   }
 }
@@ -446,8 +446,8 @@ header {
   z-index: -20;
   -webkit-animation-name: bigFan;
           animation-name: bigFan;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

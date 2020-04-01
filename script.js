@@ -25,7 +25,7 @@ $(function() {
         
         displayFinalAnswer();
     }
-
+    // on hover and focus do thisx
     // hover button makes image change
     $('.startQuiz').hover(function () {
         $('#mom2').css("opacity", 1);
