@@ -145,7 +145,7 @@ header {
                 opacity: 1;
             }
             100%{
-                transform: translateY(-100px)rotateX(3deg) scale(3);
+                transform: rotate(360deg) translateY(-100px) scale(3);
                 
                 opacity: 0; 
             }
@@ -160,7 +160,6 @@ header {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
-
 }
 .result {
     display: flex;

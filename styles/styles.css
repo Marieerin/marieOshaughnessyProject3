@@ -422,8 +422,8 @@ header {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-100px) rotateX(3deg) scale(3);
-            transform: translateY(-100px) rotateX(3deg) scale(3);
+    -webkit-transform: rotate(360deg) translateY(-100px) scale(3);
+            transform: rotate(360deg) translateY(-100px) scale(3);
     opacity: 0;
   }
 }
@@ -434,8 +434,8 @@ header {
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(-100px) rotateX(3deg) scale(3);
-            transform: translateY(-100px) rotateX(3deg) scale(3);
+    -webkit-transform: rotate(360deg) translateY(-100px) scale(3);
+            transform: rotate(360deg) translateY(-100px) scale(3);
     opacity: 0;
   }
 }
