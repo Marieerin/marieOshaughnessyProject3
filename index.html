@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page title  -->
     <title>Would My Mom Like You?</title>
 
     <!-- style sheet -->
@@ -11,30 +12,36 @@
     <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Rokkitt:400,700&display=swap" rel="stylesheet">
 
+    <!-- fontAwesome -->
+    <script src="https://kit.fontawesome.com/a80f027cee.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
     
     <!-- landing page -->
-    <header  id="topOfPage">
-        <!-- quiz title & blurb/subtitle -->
-        <section id="headerContent">
-            <div>
-                <h1>Would My Mom Like You?</h1>
-                <p>Here's a little quiz to determine if my mother, the sweetest woman who's too good for this earth, would like you. Trust me you want to know!</p>
-            </div>
-            <!-- mom image -->
-            <div class="mom">
-                <img src="assets/mom1.png" alt="">
-                <img src="assets/mom2.png" id="mom2" alt="">
-            </div>
-        </section>
-        <!-- button starts quiz -->
-        <a href="#question1">Start Quiz!</a>
+    <header id="topOfPage">
+        <div class="wrapper">
+            <!-- quiz title & blurb/subtitle -->
+            <div class="speechBubble"><span>Would I?</span></div>
+            <section id="headerContent">
+                <div>
+                    <h1>Would My Mom Like You?</h1>
+                    <p>Here's a little quiz to determine if my mother, the sweetest woman who's too good for this earth, would like you. Trust me you want to know!</p>
+                </div>
+                <!-- mom image -->
+                    <div class="mom">
+                        <img src="assets/mom1.png" alt="">
+                        <img src="assets/mom2.png" id="mom2" alt="">
+                    </div>
+            </section>
+            <!-- button starts quiz -->
+            <a class="startQuiz" href="#question1">Start Quiz!</a>
+        </div>
     </header>
     <main>
 
-        <form action="">
+        <form class="wrapper" action="">
 
             <!-- first question -->
             <fieldset class="question question1" id="question1">
@@ -94,8 +101,10 @@
 
             <!-- quiz result -->
             <fieldset class="result">
-                <div></div>
                 <fieldset class="answer" id="answer">
+                    <div class="answerPicture">
+                        
+                    </div>
                     <div class="percentageAnswer">
         
                     </div>

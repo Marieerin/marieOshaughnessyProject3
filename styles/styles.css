@@ -237,7 +237,16 @@ html {
   overflow: hidden;
 }
 
+/*
+the following were used 
+https://leaverou.github.io/bubbly/
+*/
 /* global styles */
+.wrapper {
+  margin: 0 auto;
+  max-width: 950px;
+}
+
 body {
   background-color: #eef9ed;
   color: #446048;
@@ -268,18 +277,22 @@ button:focus {
 h1,
 h2 {
   font-family: "Berkshire Swash", cursive;
+  color: #f45a5a;
 }
 
 p,
 a,
-label {
+label,
+span {
   font-family: "Rokkitt", serif;
 }
 
 img {
   width: 200px;
   border-radius: 50%;
-  border: 5px solid #69936f;
+  border: 10px solid #f45a5a;
+  -webkit-box-shadow: 0 0 1px #446048;
+          box-shadow: 0 0 1px #446048;
 }
 
 /* header styles */
@@ -324,6 +337,48 @@ header a {
   font-size: 1.5em;
 }
 
+header .speechBubble {
+  opacity: 0;
+  position: relative;
+  background: #f45a5a;
+  border-radius: .4em;
+  left: 218px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 2px #f45a5a;
+          box-shadow: 0 0 2px #f45a5a;
+  color: #ffdbd6;
+}
+
+header .speechBubble span {
+  height: 39px;
+  width: 100px;
+  padding: 11px;
+  font-weight: 700;
+}
+
+header .speechBubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 21px solid transparent;
+  border-top-color: #f45a5a;
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -10.5px;
+  margin-bottom: -21px;
+}
+
 header .mom {
   margin-left: 20px;
 }
@@ -332,11 +387,6 @@ header #mom2 {
   z-index: 10;
   position: absolute;
   opacity: 0;
-}
-
-header #mom2:hover,
-header #mom2:focus {
-  opacity: 1;
 }
 
 /* question  styles */
@@ -365,6 +415,47 @@ header {
 }
 
 /* result  styles */
+@-webkit-keyframes bigFan {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px) rotateX(3deg) scale(3);
+            transform: translateY(-100px) rotateX(3deg) scale(3);
+    opacity: 0;
+  }
+}
+@keyframes bigFan {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-100px) rotateX(3deg) scale(3);
+            transform: translateY(-100px) rotateX(3deg) scale(3);
+    opacity: 0;
+  }
+}
+
+.bigFan {
+  color: #ffdbd6;
+  position: absolute;
+  z-index: -20;
+  -webkit-animation-name: bigFan;
+          animation-name: bigFan;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
 .result {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,7 +468,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  height: 100vh;
+}
+
+.result img {
+  width: 300px;
 }
 
 .answer {

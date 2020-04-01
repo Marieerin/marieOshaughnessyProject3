@@ -18,9 +18,35 @@ $(function() {
         function displayFinalAnswer() {
             $('.percentageAnswer').html(`<p>${finalAnswer} %</p>`)
             $('.textAnswer').html('<p> Chance my mom would like you!</p>')
+            $('.answerPicture').html('<img src="assets/mom3.png" id="mom3" alt="">')
+            $('.result').append('<i class="fas fa-fan bigFan"></i>')
         }
+
+        
         displayFinalAnswer();
     }
+
+    // hover button makes image change
+    $('.startQuiz').hover(function () {
+        $('#mom2').css("opacity", 1);
+        $('.speechBubble').css("opacity", 1);
+        $('.speechBubble:after').css("opacity", 1);
+    }, function() {
+        $('#mom2').css("opacity", 0);
+        $('.speechBubble').css("opacity", 0);
+        $('.speechBubble:after').css("opacity", 0);
+    })
+
+    // focus 
+    $('.startQuiz').focus(function () {
+        $('#mom2').css("opacity", 1);
+        $('.speechBubble').css("opacity", 1);
+        $('.speechBubble:after').css("opacity", 1);
+    }, function () {
+        $('#mom2').css("opacity", 0);
+        $('.speechBubble').css("opacity", 0);
+        $('.speechBubble:after').css("opacity", 0);
+    })
 
     // Next button scrolls to the next question
     $('a').on('click', function (e) {
@@ -31,6 +57,7 @@ $(function() {
     $('a[type="submit"]').on('click', function(e){
         e.preventDefault();
         formSubmitted();
+
     });
     // $('form').on('submit', function(e){
     //         formSubmitted();
