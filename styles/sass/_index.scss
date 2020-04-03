@@ -139,44 +139,98 @@ header {
 
 
 /* result  styles */
+.answerPicture {
+    position: relative;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        box-shadow: none;
+    }
+}
 @keyframes bigFan {
     0% {
-                transform: rotate(0);
-                opacity: 1;
-            }
-            100%{
-                transform: translateY(100px) rotateZ(20000deg) scale(3) ;
-                opacity: 0; 
-            }
-
+            transform: scale(10);
+            opacity: 1;
+        }
+        100%{
+            transform: scale(20) ;
+            opacity: 0; 
+        }
 }
 .bigFan {
-    color: $lightSecondaryColor;
+    
+    color: $darkSecondaryColor;
     position: absolute;
     z-index: -20;
     animation-name: bigFan;
-    animation-duration: 1.5s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: normal;
 }
+.bigFan2 {
+    display: flex;
+    justify-content: center;
+    color: $darkSecondaryColor;
+    position: absolute;
+    z-index: -20;
+    animation-name: bigFan;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+}
+.bigFan3 {
+    display: flex;
+    justify-content: center;
+    color: $darkSecondaryColor;
+    position: absolute;
+    z-index: -20;
+    animation-name: bigFan;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 2s;
+}
+.bigFan4 {
+    display: flex;
+    justify-content: center;
+    color: $darkSecondaryColor;
+    position: absolute;
+    z-index: -20;
+    animation-name: bigFan;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 3s;
+}
+
 .result {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     img {
-        width: 300px;
+        width: 235px;
     }
 }
 .answer{
     display: flex;
     align-items: center;
-    .percentageAnswer {
-        font-size: 90px;
-    }
-    .textAnswer {
-        font-size: 50px;
-        margin-left: 15px;
-    }
 }
+.percentageAnswer {
+    font-weight: 700;
+    font-size: 60px;
+    width: 150px;
+    margin-left: 40px;
+}
+.textAnswer {
+    font-size: 50px;
+    margin-left: 15px;
+}
+

@@ -415,45 +415,136 @@ header {
 }
 
 /* result  styles */
+.answerPicture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answerPicture img {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @-webkit-keyframes bigFan {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: scale(10);
+            transform: scale(10);
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(100px) rotateZ(20000deg) scale(3);
-            transform: translateY(100px) rotateZ(20000deg) scale(3);
+    -webkit-transform: scale(20);
+            transform: scale(20);
     opacity: 0;
   }
 }
+
 @keyframes bigFan {
   0% {
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: scale(10);
+            transform: scale(10);
     opacity: 1;
   }
   100% {
-    -webkit-transform: translateY(100px) rotateZ(20000deg) scale(3);
-            transform: translateY(100px) rotateZ(20000deg) scale(3);
+    -webkit-transform: scale(20);
+            transform: scale(20);
     opacity: 0;
   }
 }
 
 .bigFan {
-  color: #ffdbd6;
+  color: #f45a5a;
   position: absolute;
   z-index: -20;
   -webkit-animation-name: bigFan;
           animation-name: bigFan;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: normal;
           animation-direction: normal;
+}
+
+.bigFan2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f45a5a;
+  position: absolute;
+  z-index: -20;
+  -webkit-animation-name: bigFan;
+          animation-name: bigFan;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.bigFan3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f45a5a;
+  position: absolute;
+  z-index: -20;
+  -webkit-animation-name: bigFan;
+          animation-name: bigFan;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.bigFan4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f45a5a;
+  position: absolute;
+  z-index: -20;
+  -webkit-animation-name: bigFan;
+          animation-name: bigFan;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .result {
@@ -471,7 +562,7 @@ header {
 }
 
 .result img {
-  width: 300px;
+  width: 235px;
 }
 
 .answer {
@@ -483,11 +574,14 @@ header {
           align-items: center;
 }
 
-.answer .percentageAnswer {
-  font-size: 90px;
+.percentageAnswer {
+  font-weight: 700;
+  font-size: 60px;
+  width: 150px;
+  margin-left: 40px;
 }
 
-.answer .textAnswer {
+.textAnswer {
   font-size: 50px;
   margin-left: 15px;
 }

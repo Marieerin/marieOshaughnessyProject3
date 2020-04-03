@@ -18,15 +18,23 @@ $(function() {
         function displayFinalAnswer() {
             $('.percentageAnswer').html(`<p>${finalAnswer} %</p>`)
             $('.textAnswer').html('<p> Chance my mom would like you!</p>')
-            $('.answerPicture').html('<img src="assets/mom3.png" id="mom3" alt="">')
-            $('.result').append('<i class="fas fa-fan bigFan"></i>')
+            $('.answerPicture').html('<img src="assets/mom3.png" id="mom3" alt=""><i class="fas fa-circle bigFan"></i><i class="fas fa-circle bigFan2"></i><i class="fas fa-circle bigFan3"></i><i class="fas fa-circle bigFan4"></i>')
+            
+            // $('.answerPicture').append('<i class="fas fa-circle bigFan"></i><i class="fas fa-circle bigFan2"></i><i class="fas fa-circle bigFan3"></i><i class="fas fa-circle bigFan4"></i>')
         }
 
+        // radio button = checked displayFinalAnswer else alert
+        if (question1 === 0 || question2 === 0 || question3 === 0){
+            alert('Oops! You missed something!')
+        } else {
+            displayFinalAnswer();
+        }
         
-        displayFinalAnswer();
     }
-    // on hover and focus do thisx
-    // hover button makes image change
+
+
+    // image appear and dissapear
+    // on hover
     $('.startQuiz').hover(function () {
         $('#mom2').css("opacity", 1);
         $('.speechBubble').css("opacity", 1);
@@ -36,8 +44,7 @@ $(function() {
         $('.speechBubble').css("opacity", 0);
         $('.speechBubble:after').css("opacity", 0);
     })
-
-    // focus 
+    // on focus 
     $('.startQuiz').focus(function () {
         $('#mom2').css("opacity", 1);
         $('.speechBubble').css("opacity", 1);
@@ -47,6 +54,7 @@ $(function() {
         $('.speechBubble').css("opacity", 0);
         $('.speechBubble:after').css("opacity", 0);
     })
+
 
     // Next button scrolls to the next question
     $('a').on('click', function (e) {
