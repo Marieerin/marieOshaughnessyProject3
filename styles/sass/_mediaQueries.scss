@@ -1,0 +1,62 @@
+@media only screen and (max-width: 960px) {
+    .question {
+        margin: auto 0;   
+    }
+    .innerFieldset {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+        a, button {
+        padding: 8px 19px;
+        margin-top: 25px;
+        }
+    header {
+        h1 {
+            font-size: 30px;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+        }
+        .speechBubble {
+            left: 41px;
+            z-index: 20;
+            top: 14px;
+            opacity: 1;
+            span {
+                height: 35px;
+                width: 90px;
+                padding: 8px;
+            }
+        }
+        #mom2 {
+            opacity: 1;
+        }
+        .mom {
+            margin-left: 0;
+        }
+        img{
+            width: 150px;
+            border: 2px solid $darkSecondaryColor;
+        }
+    }
+    .result img {
+        width: 192px;
+    }
+    .answer {
+        position: relative;
+    }
+    .percentageAnswer {
+        position: absolute;
+        top: -40px;
+        left: 232px;
+        right: 0;
+        font-size: 60px;
+    }
+
+    .textAnswer {
+        font-size: 23px;
+    }
+}

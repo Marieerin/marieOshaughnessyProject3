@@ -8,6 +8,10 @@ $(function() {
         const question1 = parseInt($('input[name=question1]:checked').val(), 10);
         const question2 = parseInt($('input[name=question2]:checked').val(), 10);
         const question3 = parseInt($('input[name=question3]:checked').val(), 10);
+
+        console.log(typeof question1);
+        console.log(question1);
+        console.log(isNaN(question1))
         //evaluation section
         // my mom doesnt really like anyone less than 44%
         const x =  Math.floor(question1 + question2 + question3);
@@ -18,20 +22,17 @@ $(function() {
         function displayFinalAnswer() {
             $('.percentageAnswer').html(`<p>${finalAnswer} %</p>`)
             $('.textAnswer').html('<p> Chance my mom would like you!</p>')
-            $('.answerPicture').html('<img src="assets/mom3.png" id="mom3" alt=""><i class="fas fa-circle bigFan"></i><i class="fas fa-circle bigFan2"></i><i class="fas fa-circle bigFan3"></i><i class="fas fa-circle bigFan4"></i>')
-            
-            // $('.answerPicture').append('<i class="fas fa-circle bigFan"></i><i class="fas fa-circle bigFan2"></i><i class="fas fa-circle bigFan3"></i><i class="fas fa-circle bigFan4"></i>')
+            $('.answerPicture').html('<img src="assets/mom3.png" id="mom3" alt="my mother turning to the camera with a ladle of stew and a warm smile"><i class="fas fa-circle bigFan"></i><i class="fas fa-circle bigFan2"></i><i class="fas fa-circle bigFan3"></i><i class="fas fa-circle bigFan4"></i>')
         }
 
         // radio button = checked displayFinalAnswer else alert
-        if (question1 === 0 || question2 === 0 || question3 === 0){
-            alert('Oops! You missed something!')
+        //if (question1 === NaN || question2 === NaN || question3 === NaN){
+        if (isNaN(question1) || isNaN(question2) || isNaN(question3)){
+            alert('Oops! You missed something! Please fill out all of the questions!')
         } else {
             displayFinalAnswer();
         }
-        
     }
-
 
     // image appear and dissapear
     // on hover
@@ -67,12 +68,4 @@ $(function() {
         formSubmitted();
 
     });
-    // $('form').on('submit', function(e){
-    //         formSubmitted();
-    // })
-
-
-
-
-
 });

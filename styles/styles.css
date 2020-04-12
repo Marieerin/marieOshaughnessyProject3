@@ -244,7 +244,7 @@ https://leaverou.github.io/bubbly/
 /* global styles */
 .wrapper {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 948px;
 }
 
 body {
@@ -276,7 +276,7 @@ button:focus {
 
 h1,
 h2 {
-  font-family: "Berkshire Swash", cursive;
+  font-family: "Rokkitt", serif;
   color: #f45a5a;
 }
 
@@ -284,7 +284,7 @@ p,
 a,
 label,
 span {
-  font-family: "Rokkitt", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -411,7 +411,7 @@ header {
 
 .innerFieldset {
   text-align: left;
-  width: 35vw;
+  width: 50vw;
 }
 
 /* result  styles */
@@ -577,11 +577,71 @@ header {
 .percentageAnswer {
   font-weight: 700;
   font-size: 60px;
-  width: 150px;
+  width: 190px;
   margin-left: 40px;
 }
 
 .textAnswer {
-  font-size: 50px;
+  font-size: 47px;
   margin-left: 15px;
+}
+
+@media only screen and (max-width: 960px) {
+  .question {
+    margin: auto 0;
+  }
+  .innerFieldset {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  a, button {
+    padding: 8px 19px;
+    margin-top: 25px;
+  }
+  header h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+  }
+  header .speechBubble {
+    left: 41px;
+    z-index: 20;
+    top: 14px;
+    opacity: 1;
+  }
+  header .speechBubble span {
+    height: 35px;
+    width: 90px;
+    padding: 8px;
+  }
+  header #mom2 {
+    opacity: 1;
+  }
+  header .mom {
+    margin-left: 0;
+  }
+  header img {
+    width: 150px;
+    border: 2px solid #f45a5a;
+  }
+  .result img {
+    width: 192px;
+  }
+  .answer {
+    position: relative;
+  }
+  .percentageAnswer {
+    position: absolute;
+    top: -40px;
+    left: 232px;
+    right: 0;
+    font-size: 60px;
+  }
+  .textAnswer {
+    font-size: 23px;
+  }
 }

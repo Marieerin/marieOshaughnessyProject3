@@ -5,7 +5,7 @@ https://leaverou.github.io/bubbly/
 /* global styles */
 .wrapper {
     margin:0 auto;
-    max-width: 950px;
+    max-width: 948px;
 }
 body{
     background-color: $lighterPrimaryColor;
@@ -52,7 +52,7 @@ fieldset {
     }
 /* header styles */
 header{
-      background-image: radial-gradient($lighterPrimaryColor, $lightPrimaryColor);
+    background-image: radial-gradient($lighterPrimaryColor, $lightPrimaryColor);
 
     text-align: right;
     section {
@@ -132,7 +132,7 @@ header {
 }
 .innerFieldset {
     text-align: left;
-    width: 35vw;
+    width: 50vw;
 }
 
 
@@ -226,11 +226,12 @@ header {
 .percentageAnswer {
     font-weight: 700;
     font-size: 60px;
-    width: 150px;
+    width: 190px;
     margin-left: 40px;
 }
 .textAnswer {
-    font-size: 50px;
+    font-size: 47px;
     margin-left: 15px;
 }
+
 
