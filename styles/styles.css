@@ -1,5 +1,3 @@
-/* 
-COLOR WORLD!!! */
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -248,7 +246,8 @@ https://leaverou.github.io/bubbly/
 }
 
 body {
-  background-color: #eef9ed;
+  background-color: #fffdf7;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
   color: #446048;
 }
 
@@ -265,6 +264,8 @@ button {
   padding: 15px 45px;
   text-decoration: none;
   color: white;
+  -webkit-box-shadow: 0 0 1px #446048;
+          box-shadow: 0 0 1px #446048;
 }
 
 a:hover,
@@ -277,7 +278,7 @@ button:focus {
 h1,
 h2 {
   font-family: "Rokkitt", serif;
-  color: #f45a5a;
+  color: #f32121;
 }
 
 p,
@@ -290,15 +291,24 @@ span {
 img {
   width: 200px;
   border-radius: 50%;
-  border: 10px solid #f45a5a;
+  border: 10px solid #f32121;
   -webkit-box-shadow: 0 0 1px #446048;
           box-shadow: 0 0 1px #446048;
 }
 
 /* header styles */
 header {
-  background-image: radial-gradient(#eef9ed, #69936f);
-  text-align: right;
+  background-image: url("../assets/pawel-czerwinski-Bz_JX1COlrE-unsplash.jpg");
+  background-size: contain;
+}
+
+header .card {
+  background-color: #fffdf7;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  padding: 100px 50px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 5px #80808052;
+          box-shadow: 2px 2px 5px #80808052;
 }
 
 header section {
@@ -330,7 +340,6 @@ header h1 {
 
 header p {
   margin: 10px 0 30px 0;
-  width: 50vw;
 }
 
 header a {
@@ -340,7 +349,7 @@ header a {
 header .speechBubble {
   opacity: 0;
   position: relative;
-  background: #f45a5a;
+  background: #f32121;
   border-radius: .4em;
   left: 218px;
   display: -webkit-box;
@@ -352,8 +361,8 @@ header .speechBubble {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 2px #f45a5a;
-          box-shadow: 0 0 2px #f45a5a;
+  -webkit-box-shadow: 0 0 2px #f32121;
+          box-shadow: 0 0 2px #f32121;
   color: #ffdbd6;
 }
 
@@ -372,7 +381,7 @@ header .speechBubble:after {
   width: 0;
   height: 0;
   border: 21px solid transparent;
-  border-top-color: #f45a5a;
+  border-top-color: #f32121;
   border-bottom: 0;
   border-right: 0;
   margin-left: -10.5px;
@@ -406,7 +415,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .innerFieldset {
@@ -460,7 +468,7 @@ header {
 }
 
 .bigFan {
-  color: #f45a5a;
+  color: #f32121;
   position: absolute;
   z-index: -20;
   -webkit-animation-name: bigFan;
@@ -482,7 +490,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #f45a5a;
+  color: #f32121;
   position: absolute;
   z-index: -20;
   -webkit-animation-name: bigFan;
@@ -506,7 +514,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #f45a5a;
+  color: #f32121;
   position: absolute;
   z-index: -20;
   -webkit-animation-name: bigFan;
@@ -530,7 +538,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #f45a5a;
+  color: #f32121;
   position: absolute;
   z-index: -20;
   -webkit-animation-name: bigFan;
@@ -626,7 +634,7 @@ header {
   }
   header img {
     width: 150px;
-    border: 2px solid #f45a5a;
+    border: 2px solid #f32121;
   }
   .result img {
     width: 192px;
